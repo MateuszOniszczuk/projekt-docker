@@ -1,0 +1,21 @@
+version: '3.8'
+services:
+  model:
+    build:
+      context: ./model
+      dockerfile: Dockerfile_python
+    volumes:
+      - ./data:/app/data
+      - ./results:/app/results
+    restart: on-failure
+  deployement:
+    build:
+      context: ./deployement
+      dockerfile: Dockerfile_streamlit
+    ports:
+      - "8501:8501"
+    volumes:
+      - ./results:/app/results
+    depends_on:
+      - model
+    restart: on-failure
