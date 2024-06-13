@@ -7,6 +7,4 @@ Tematem pracy jest prognozowanie zużycia energii elektrycznej w danym okresie c
 Wymagane zainstalowane lokalnie środowisko Dockera i narzędzie Docker Compose.
 
 ## Jak używać
-W wierszu poleceń przejść do katalogu projektu i wywołać polecenie:
-docker-compse up
-System zostanie uruchomiony przez Dockera i zostanie wskazany adres, pod którym działa aplikacja internetowa.
+W wierszu poleceń przejść do katalogu projektu i wywołać polecenie: `docker-compose up`. System zostanie uruchomiony przez Dockera i zostanie wskazany adres, pod którym działa aplikacja internetowa.
